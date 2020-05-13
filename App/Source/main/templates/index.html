@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block css %}
+<link href="/static/css/index.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <form action="{{ url_for('analyze') }}" method=post>
+        <div class="form-group">
+          <label for="scramble" class="col-form-label-lg">アカウント名</label>
+          <input type="text" class="form-control" name="name">
+        </div>
+        <button type="submit" class="btn btn-primary">かいせき</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="/static/js/index.js"></script>
+{% endblock %}

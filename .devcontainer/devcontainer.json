@@ -1,0 +1,7 @@
+{
+	"name": "webapp-usingpython",
+	"dockerFile": "../App/Dockerfile",
+	"extensions": [
+		"ms-python.python"
+	]
+}

@@ -1,0 +1,10 @@
+version: "3"
+services:
+  pythonapp:
+    container_name: "app"
+    build: ./App
+    volumes:
+      - ./App/Source:/app/Source
+    ports:
+      - "80:80"
+    tty: true
